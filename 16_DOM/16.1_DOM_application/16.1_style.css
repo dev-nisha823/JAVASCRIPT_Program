@@ -1,0 +1,185 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+.header{
+    min-height:50vh;
+    position:relative;
+    background : url("../16.1_DOM_application/headerImg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    display:flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-around;
+}
+ul{
+    display:flex;
+    justify-content: space-evenly;
+    width:20%;
+}
+ul li{
+    list-style-type: none;
+}
+#logo{
+    color:white;
+    font-size: 2.5em;
+}
+a{
+    text-decoration : none;
+    color:white;
+    font-size: 1.2em;
+}
+.container{
+    position:absolute;
+    left:45%;
+    top:50%;
+    height:8vh;
+    width:24vh;
+}
+.container .button{
+    height: 4vh;
+    width:24vh;
+}
+.container h2{
+    text-align:center;
+    margin-bottom:5px;
+}
+.section-todo{
+    text-align: center;
+    margin-top:25px;
+}
+.form-todo{
+    width:50%;
+    margin:25px 24%;
+    padding-left:10px;
+}
+.form-todo input{
+    height: 40px;
+    margin-left:20px;
+}
+.form-todo input[type="submit"]{
+    width:25%;
+}
+.form-todo input[type="text"]{
+    width:50%;
+    padding:5px;
+}
+.todo-list{
+    width:24.8%;
+    height: 110px;
+    margin-left:30.8%;
+    font-size: 1.2em;
+    background-color: black;
+    color:aliceblue;
+    display: block;
+}
+.todo-list li{
+    text-transform:capitalize;
+}
+
+.section-signup{
+    width:70%;
+    margin: 10px auto;
+    padding:25px 5%;
+    background-color: rgb(222, 222, 218);
+}
+.section-signup h2{
+    text-align: center;
+    font-size:30px;
+}
+.signup-form .form-group{
+    margin-top:1em;
+}
+.signup-form label{
+    display:block;
+    text-transform: capitalize;
+    font-size: larger;
+}
+.signup-form input{
+    display:block;
+    min-width:100%;
+    margin-top:0.3em;
+    min-height:40px;
+    padding-left:10px;
+}
+.form-group textarea{
+    min-width: 100%;
+    padding-left:10px;
+}
+.signup-form .submit-btn{
+    margin-left: 45%;
+    min-width: 150px;
+    min-height: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+.list{
+    display: block;
+    margin-left:30%;
+}
+.list li{
+    margin:10px;
+    padding: 2%;
+    border:1px solid black;
+    background-color: rgb(100, 100, 100);
+    color:white;
+    font-size: larger;
+}
+
+.buttons{
+    padding:2px;
+}
+.buttons button{
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: rgb(32, 32, 33);
+    color:white;
+    display:block;
+    margin:5px auto;
+    height:30px;
+    width:150px;
+    text-transform: capitalize;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.outer-div{
+    display:flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black;
+    background-color: rgb(194, 191, 191);
+}
+.box{
+    min-width:100px;
+    min-height:100px;
+    padding: 5rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor:pointer;
+    text-transform: capitalize;
+}
+.grandParent{
+    background-color:grey;
+    color:black;
+    border:1px solid black;
+}
+.parent{
+    background-color:rgb(75, 73, 73);
+    color:black;
+    border:1px solid black;
+}
+.child{
+    background-color:rgb(56, 55, 55);
+    color:black;
+    border:1px solid black;
+}

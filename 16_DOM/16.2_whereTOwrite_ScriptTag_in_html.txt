@@ -1,0 +1,44 @@
+Various methods of where to write script tag inside HTML document
+
+1) inside <head> tag
+<head> 
+    <script src="index.js"></script>
+</head>
+Problem -> 
+step1 : The index.html file will go to the browser 
+step2 : browser will start parsing(read the code line by line) the code of HTML file
+step3 : when broswer will encounter the js file then browser will stop parsing the code and start loading the js file i.e,. script tag
+step4 : After loading the complete js file the browser will execute/run the js file line by line
+step5 : we have used a lot of html element inside the js file and browser didn't know what is written after the script tag bcz browser stops parsing when it encounter js file
+step6 : when browser will execute js file then instantly browser will give error bcz it doesn't know what are the elements written inside the html file
+That's why we should not write <script> tag inside <head> tag
+
+
+2) writing script just above the closing of <body> tag
+-> Again browser will parse the html file line by line 
+-> encounter the js file browser will start loading the js file completely
+-> browser will execute the js file smoothly
+Problem -> js file will be executed as well as loaded but each and every stage 
+           browser will take a lot of time
+           -> in parsing the html file
+           -> loading the js file
+           -> executing the js file
+we can improve the website performance.
+
+3) inside <head> tag but writing "async" keyword inside <script> tag
+<head> 
+    <script src="index.js" async></script>
+</head>
+-> same process  
+-> when browser will encounter script tag then parsing of html file as well as loading of js file will happen simultaneously bcz of async
+-> but when js file loaded completely then browser will stop parsing and start executing js file 
+-> here only half of the file is parse and if we uses the html element in our js file as well then after executing the browser will give error bcz browser will only know the html element only half 
+
+
+4) inside <head> tag but using "defer" keyword inside <script> tag
+<head> 
+    <script src="index.js" defer></script>
+</head>
+-> when browser will encounter defer then parsing and loading will happen simultaneously 
+-> but when loading completed but browser will first parse the html file completely then browser will execute the js file.
+-> Here, time is saving bcz file is already loaded and error will be also very less

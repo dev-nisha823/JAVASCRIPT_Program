@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM in Js</title>
+    <link rel="stylesheet" href="../16.1_DOM_application/16.1_style.css">
+    <!-- <script src="../16.1_DOM_application/16.1_index.js" defer></script> -->
+    <!-- <script src="../16.14_createHTMLelement.js" defer></script> -->
+    <!-- <script src="../16.15_createHTMLelement_II.js" defer></script> -->
+    <!-- <script src="../16.16_cloneNodes.js" defer></script> -->
+    <!-- <script src="../16.17_oldMethodsDOM.js" defer></script> -->
+    <!-- <script src="../16.18_static_live_list.js" defer></script> -->
+    <script src="../16.19_dimension_of_elements.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <h1 id="logo">LOGO</h1>
+            <ul>
+                <li><a href = "">Home</a></li>
+                <li><a href = "">Todo</a></li>
+                <li><a href = "">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h2>Manage</h2>
+            <button class="button" type="button">Learn More</button>
+        </div>
+    </header>
+
+    <section class="section-todo">
+        <h2>Your Plan for Today ???</h2>
+        <form class="form-todo">
+            <input type="text" id="text" placeholder="Add Todo"/>
+            <input type="submit" value="Add Todo" />
+        </form>
+        <ul class="todo-list">
+            <li>todo1</li>
+        </ul>
+    </section>
+
+    <ul class="list">
+       <li class="list-item">Item1</li>
+       <li class="list-item">Item2</li>
+       <li class="list-item">Item3</li>
+       <li class="list-item">Item4</li>
+       <li class="list-item">Item5</li>
+    </ul>
+
+    <section class="section-signup">
+        <h2>SignUp</h2>
+        <form class="signup-form">
+            <div class="form-group">
+                <label for="username">username</label>
+                <input type="text" name="username" id="username" />
+            </div>
+            <div class="form-group">
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" />
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">confirmPassword</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" />
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">phoneNumber</label>
+                <input type="number" name="phoneNumber" id="phoneNumber" />
+            </div>
+            <div class="form-group">
+                <label for="E-mail">E-mail</label>
+                <input type="email" name="E-mail" id="E-mail" />
+            </div>
+            <div class="form-group">
+                <label for="about">About</label>
+                <textarea name="about" id="about" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

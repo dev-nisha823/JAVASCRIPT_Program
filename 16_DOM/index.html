@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Properties</title>
+    <!-- <script src="../16_DOM/16.10.1_innerHTML .js" defer></script> -->
+    <!-- <script src="16.10.2_outerHTML.js" defer></script> -->
+    <!-- <script src="16.10.3_textContent_innerText.js" defer></script> -->
+    <!-- <script src="./16.10.4_hiddenProperty.js" defer></script> -->
+    <!-- <script src="./16.7.1_hasAttribute.js" defer></script> -->
+    <!-- <script src="16.7.1_removeAttribute.js" defer></script>  -->
+    <!-- <script src="16.7.1_attribute.js" defer></script> -->
+    <!-- <script src="16.13.1_adjecentHTMLelement.js" defer></script> -->
+    <script src="16.12.1_className.js" defer></script>
+
+    <style>
+        .yellow{
+            background-color: yellow;
+            color:white;
+        }
+        .red{
+            background-color: red;
+            color: black;
+        }
+        .text{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    Hello world
+    <span id="span"><b>Hey i am span</b></span>
+    <p class="hello"> hellp          para
+        <h1>h ea ding</h1>
+    </p>
+    <div id="element" hidden>I can be hidden</div>
+    <div id="elementdiv" data-game="mario" data-player="nisha">div-1</div>
+
+
+    I am start of this container(outer)
+    <div class="container">
+        i am start of this container (inner)
+        <div id="first">Iam the first element</div>
+        i am end of this container (inner)
+    </div>
+    I am end of this container (outer)
+</body>
+</html>
